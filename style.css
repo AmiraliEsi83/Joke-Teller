@@ -1,0 +1,121 @@
+/* ROBOT.GIF from Gifer - https://gifer.com/en/YseV */
+
+html {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    background: #bbd2ef;
+  }
+  
+  .container {
+    height: 100vh;
+    width: 100vW;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    background: url('./robot.gif');
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+  }
+  
+  
+  button {
+    cursor: pointer;
+    outline: none;
+    padding: 10px;
+    width: 200px;
+    height: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: white;
+    background: #1d1d3b;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+    margin-inline-end: 20%;
+  }
+  
+  button:hover {
+    filter: brightness(90%);
+  }
+  
+  button:active {
+    transform: scale(0.95);
+    -webkit-transform: scale(0.95);
+    -moz-transform: scale(0.95);
+    -ms-transform: scale(0.95);
+    -o-transform: scale(0.95);
+}
+  
+  button:disabled {
+    cursor: default;
+    filter: brightness(30%);
+  }
+  footer {
+	display: flex;
+	flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+	bottom: 0;
+	width: 100%;
+	color: black;
+}
+.social-media{
+  margin: 0 20px 10px 0;
+}
+h6{
+  margin-left: 10px;
+}
+i {
+	color: black;
+	transition: all 0.5s;
+	font-size: 1.5rem;
+}
+
+i:hover {
+	transform: scale(1.1);
+}
+/* Combined media query for both mobile and tablet size */
+@media screen and (max-width:1000px)and(min-width:662px),screen and (max-width:662px){
+ 
+ .flex-container button:active{
+      transform:scale(0.98);
+   }
+  .flex-container button{
+      -webkit-tap-highlight-color:transparent;
+  }
+  .flex-container button:disabled{
+   display:none;
+}
+}
+
+/* Media Query:For Tablet Size */
+@media screen and (max-width:1000px)and(min-width:662px){
+  .header-text h1{
+      font-size:4rem;
+   }
+   .header-text p{
+      font-size:2rem;
+   }
+
+}
+
+/* Media Query:For mobile size */
+@media screen and (max-width:662px){
+ .header-text h1{
+      font-size:3.8rem;
+      line-height:0.8;
+   }
+   .header-text p{
+      font-size:1.9rem;
+   }
+   .container{
+      background-position: center;
+      background-size:cover;
+   }
+}
